@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="mhs"
+            type="com.gd3_2_a_9831.Mahasiswa"/>
+        <variable
+            name="activity"
+            type="com.gd3_2_a_9831.MainActivity" />
+    </data>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:context=".MainActivity"
+            android:id="@+id/layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NPM"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@={mhs.npm}"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAMA"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@={mhs.nama}"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fakultas"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@={mhs.fakultas}"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jurusan"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@={mhs.jurusan}"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IPK"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@={mhs.stringIpk}"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobi"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@={mhs.hobi}"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:text="SIMPAN"
+                android:onClick="@{activity.btnSaveMahasiswa}"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>
